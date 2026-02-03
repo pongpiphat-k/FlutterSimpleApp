@@ -33,9 +33,6 @@ class MySummary extends StatelessWidget {
 class _SummaryList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var hugeStyle = Theme.of(
-      context,
-    ).textTheme.displayLarge!.copyWith(fontSize: 48);
 
     return SizedBox(
       height: 200,
@@ -45,8 +42,8 @@ class _SummaryList extends StatelessWidget {
           children: [
             Text('Thank you for your purchase!'),
 
-
             
+
             const SizedBox(width: 24),
             FilledButton(
               onPressed: () => context.go('/catalog'),
